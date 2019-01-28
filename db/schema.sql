@@ -5,9 +5,11 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-CREATE TABLE `burgers` (
-`id` Int( 11 ) AUTO_INCREMENT NOT NULL,
-`burger_name` varchar(255) NULL,
-`devoured` boolean default false,
- PRIMARY KEY ( `id` )
+CREATE TABLE 'burgers' (
+'id' Int( 11 ) AUTO_INCREMENT NOT NULL,
+'burger_name' varchar(255) NULL,
+'devoured' boolean,
+ PRIMARY KEY ( 'id' )
 );
+
+SELECT * FROM burgers;
